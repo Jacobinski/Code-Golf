@@ -1,0 +1,1 @@
+p,l,d,i=11;main(){char s[10];while(i<123456789){p=0;sprintf(s,"%d",++i);l=strlen(s)-1;for(;l>0;l--){d=s[l]-s[l-1];if(p==0)p=d;if(p^d|d<1)break;p=d;}if(l==0)puts(s);}}
